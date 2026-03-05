@@ -2,11 +2,20 @@
 import pandas as pd
 import os
 import joblib
+import os
 
 model_young = joblib.load(os.path.join("artifacts", "model_young.joblib"))
 model_rest = joblib.load(os.path.join("artifacts", "model_rest.joblib"))
 scaler_young = joblib.load(os.path.join("artifacts", "scaler_young.joblib"))
 scaler_rest = joblib.load(os.path.join("artifacts", "scaler_rest.joblib"))
+
+<<<<<<< HEAD
+model_young = joblib.load(os.path.join("artifacts", "model_young.joblib"))
+model_rest = joblib.load(os.path.join("artifacts", "model_rest.joblib"))
+scaler_young = joblib.load(os.path.join("artifacts", "scaler_young.joblib"))
+scaler_rest = joblib.load(os.path.join("artifacts", "scaler_rest.joblib"))
+=======
+>>>>>>> 70f42e95e36f25c6be2f7d05d2f2699fee4df99f
 
 def calculate_normalized_risk(medical_history):
     risk_scores = {
